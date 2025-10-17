@@ -1,0 +1,83 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Um cinza bem claro para o fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container principal do formulário de login */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+/* Estilo do formulário */
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título do formulário */
+#login-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Agrupamento de label e input */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo das labels (Email, Senha) */
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Estilo dos campos de texto (input) */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura final */
+}
+
+/* Estilo do botão de submit */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Azul primário */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito suave na troca de cor */
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #0056b3; /* Um azul mais escuro */
+}
+
+/* Estilo para a mensagem de erro */
+.error-message {
+    color: #dc3545; /* Vermelho para indicar erro */
+    text-align: center;
+    margin-top: 15px;
+    min-height: 1.2em; /* Reserva espaço para não "pular" o layout */
+}
