@@ -1,83 +1,89 @@
-/* Estilo geral do corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5; /* Um cinza bem claro para o fundo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+/* Gradiente decorativo superior colorido */
+.colorgraph {
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right,
+        #c4e17f 0%, #c4e17f 12.5%,
+        #f7fdca 12.5%, #f7fdca 25%,
+        #fecf71 25%, #fecf71 37.5%,
+        #f0776c 37.5%, #f0776c 50%,
+        #db9dbe 50%, #db9dbe 62.5%,
+        #c49cde 62.5%, #c49cde 75%,
+        #669ae1 75%, #669ae1 87.5%,
+        #62c2e4 87.5%, #62c2e4 100%
+    );
 }
 
-/* Container principal do formulário de login */
-.login-container {
-    background-color: #ffffff;
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+    background-repeat: no-repeat;
+}
+
+.card-container.card {
+    max-width: 450px;
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+.card {
+    background-color: #f7f7f7;
+    padding: 20px 25px 30px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-signin input[type="email"],
+.form-signin input[type="password"],
+.form-signin button {
     width: 100%;
-    max-width: 350px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    height: 44px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
-/* Estilo do formulário */
-#login-form {
-    display: flex;
-    flex-direction: column;
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(104, 145, 162);
+    outline: none;
 }
 
-/* Título do formulário */
-#login-form h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 25px;
-}
-
-/* Agrupamento de label e input */
-.input-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-/* Estilo das labels (Email, Senha) */
-.input-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: #555;
-    font-weight: bold;
-}
-
-/* Estilo dos campos de texto (input) */
-.input-group input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Garante que o padding não afete a largura final */
-}
-
-/* Estilo do botão de submit */
-button {
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff; /* Azul primário */
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
+.btn {
+    font-weight: 700;
+    height: 36px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Efeito suave na troca de cor */
 }
 
-/* Efeito hover no botão */
-button:hover {
-    background-color: #0056b3; /* Um azul mais escuro */
+.forgot-password {
+    color: rgb(104, 145, 162);
 }
 
-/* Estilo para a mensagem de erro */
-.error-message {
-    color: #dc3545; /* Vermelho para indicar erro */
-    text-align: center;
-    margin-top: 15px;
-    min-height: 1.2em; /* Reserva espaço para não "pular" o layout */
+.forgot-password:hover,
+.forgot-password:focus {
+    color: rgb(12, 97, 33);
+    text-decoration: underline;
+}
+
+/* Mensagem de erro visível e acessível */
+.error {
+    background-color: red;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Classe para esconder visualmente mas manter acessibilidade */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
 }
