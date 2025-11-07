@@ -4,14 +4,14 @@
     border: none;
     border-radius: 5px;
     background: linear-gradient(to right,
-        #c4e17f 0%, #c4e17f 12.5%,
-        #f7fdca 12.5%, #f7fdca 25%,
-        #fecf71 25%, #fecf71 37.5%,
-        #f0776c 37.5%, #f0776c 50%,
-        #db9dbe 50%, #db9dbe 62.5%,
-        #c49cde 62.5%, #c49cde 75%,
-        #669ae1 75%, #669ae1 87.5%,
-        #62c2e4 87.5%, #62c2e4 100%
+        #87ceeb 0%, #87ceeb 12.5%, /* Azul Claro */
+        #add8e6 12.5%, #add8e6 25%, /* Azul Claro mais suave */
+        #5f9ea0 25%, #5f9ea0 37.5%, /* Azul Cadet */
+        #4682b4 37.5%, #4682b4 50%, /* Azul Steel */
+        #1e90ff 50%, #1e90ff 62.5%, /* Azul Dodger */
+        #0000cd 62.5%, #0000cd 75%, /* Azul Médio */
+        #00008b 75%, #00008b 87.5%, /* Azul Escuro */
+        #000080 87.5%, #000080 100%  /* Azul Naval */
     );
 }
 
@@ -70,7 +70,7 @@ body, html {
 
 /* Mensagem de erro visível e acessível */
 .error {
-    background-color: red;
+    background-color: #0000cd; /* Era red, agora azul médio */
     color: white;
     padding: 6px 10px;
     border-radius: 4px;
