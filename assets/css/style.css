@@ -10,9 +10,9 @@
         #c4e17f 0%, #c4e17f 12.5%,
         #f7fdca 12.5%, #f7fdca 25%,
         #fecf71 25%, #fecf71 37.5%,
-        #f0776c 37.5%, #f0776c 50%,
-        #db9dbe 50%, #db9dbe 62.5%,
-        #c49cde 62.5%, #c49cde 75%,
+        #0000cd 37.5%, #0000cd 50%, /* Era #f0776c */
+        #00008b 50%, #00008b 62.5%, /* Era #db9dbe */
+        #1c3a72 62.5%, #1c3a72 75%, /* Era #c49cde */
         #669ae1 75%, #669ae1 87.5%,
         #62c2e4 87.5%, #62c2e4 100%
     );
@@ -163,9 +163,9 @@
 }
 
 .option.incorrect {
-    color: #721c24;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    color: #004085; /* Era #721c24 */
+    background: #cce5ff; /* Era #f8d7da */
+    border: 1px solid #b8daff; /* Era #f5c6cb */
 }
 
 .option.disabled {
@@ -191,9 +191,9 @@
 }
 
 .icon.cross {
-    color: #a42834;
-    background: #f8d7da;
-    border-color: #a42834;
+    color: #004085; /* Era #a42834 */
+    background: #cce5ff; /* Era #f8d7da */
+    border-color: #004085; /* Era #a42834 */
 }
 
 /* ==================================================
@@ -222,7 +222,7 @@
 }
 
 .error {
-    background-color: red;
+    background-color: #004085; /* Era red */
     color: white;
     padding: 6px 10px;
     border-radius: 4px;
@@ -317,15 +317,15 @@
 .box1 {
     border-top: 80px solid transparent;
     border-right: 80px solid transparent;
-    border-bottom: 80px solid #f6685e;
-    border-left: 80px solid #f6685e;
+    border-bottom: 80px solid #00008b; /* Era #f6685e */
+    border-left: 80px solid #00008b; /* Era #f6685e */
 }
 
 .box2 {
-    border-top: 80px solid #9c27b0;
+    border-top: 80px solid #0000cd; /* Era #9c27b0 */
     border-right: 80px solid transparent;
     border-bottom: 80px solid transparent;
-    border-left: 80px solid #9c27b0;
+    border-left: 80px solid #0000cd; /* Era #9c27b0 */
     left: 50%;
 }
 
@@ -347,16 +347,16 @@
 }
 
 .box5 {
-    border-top: 80px solid #e91e63;
-    border-right: 80px solid #e91e63;
+    border-top: 80px solid #1c3a72; /* Era #e91e63 */
+    border-right: 80px solid #1c3a72; /* Era #e91e63 */
     border-bottom: 80px solid transparent;
     border-left: 80px solid transparent;
 }
 
 .box6 {
     border-top: 80px solid transparent;
-    border-right: 80px solid #673ab7;
-    border-bottom: 80px solid #673ab7;
+    border-right: 80px solid #004085; /* Era #673ab7 */
+    border-bottom: 80px solid #004085; /* Era #673ab7 */
     border-left: 80px solid transparent;
     left: 50%;
 }
@@ -370,8 +370,8 @@
 }
 
 .box8 {
-    border-top: 80px solid #34399d;
-    border-right: 80px solid #34399d;
+    border-top: 80px solid #0000cd; /* Era #34399d */
+    border-right: 80px solid #0000cd; /* Era #34399d */
     border-bottom: 80px solid transparent;
     border-left: 80px solid transparent;
     top: 50%;
